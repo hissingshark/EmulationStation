@@ -10,6 +10,8 @@
 #if defined(__linux__)
     #ifdef _RPI_
         const char * VolumeControl::mixerName = "PCM";
+    #elif defined(_VERO4K_)
+        const char * VolumeControl::mixerName = "DAC Digital";
     #else
     	const char * VolumeControl::mixerName = "Master";
     #endif
